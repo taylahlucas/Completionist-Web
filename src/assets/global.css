@@ -1,0 +1,108 @@
+:root {
+	--black: #1D1F24;
+	--darkGrey: #303338;
+	--midGrey: #68696D;
+	--lightGrey: #BBBBBB;
+	--lightestGrey: #E8E8E8;
+	--primaryPurple: #5231F5;
+	--lightPurple: #6B72FF;
+	--darkPurple: #23244B;
+	--lightGreen: #68C2A2;
+	--errorRed: #DC143C;
+}
+
+body {
+  background-color: var(--black);
+  margin: 16;
+  padding: 0;
+  font-family: -apple-system, "Montserrat-Regular";
+}
+
+h1, h2, h3 {
+	color: var(--lightGrey);
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+p {
+	color: var(--midGrey);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item {
+	width: 300px;
+	height: 400px;
+	padding: 2px;
+  border: 2px solid var(--lightPurple);
+	border-radius: 10px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 32px;
+}
+
+.scroll-item {
+  padding: 20px;
+  min-width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+	overflow-y: auto;
+}
+
+.gameTitle {
+	position: relative;
+	bottom: 50px;
+	left: 35px;
+	font-weight: 650;
+	color: var(--lightestGrey);
+}
+
+.gameItem {
+	width: 120px;
+	height: 120px;
+	padding: 2px;
+	border-radius: 10px;
+}
+
+.button {
+	border: 2px solid var(--lightPurple);
+	border-radius: 10px;
+	height: 50px;
+	align-items: center;
+}
+
+.buttonTitle {
+	padding-left: 16px;
+	padding-right: 16px;
+}
