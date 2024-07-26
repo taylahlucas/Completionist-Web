@@ -7,6 +7,7 @@ import { availableGames, gameNames } from "../utils/constants";
 import Button from '../components/Button';
 import appStoreFilled from '../assets/images/app-store-filled.png';
 import googlePlayFilled from '../assets/images/google-play-filled.png';
+import useDeviceDetect from "../utils/hooks/useDeviceDetect";
 
 const pageStyles = {
 	marginTop: 16,
@@ -25,6 +26,8 @@ const gameContainerStyles = {
 
 // TODO: Add translations
 const IndexPage: React.FC<PageProps> = () => {
+	const { isMobile } = useDeviceDetect();
+	console.log("isMObile: ", isMobile)
 	return (
 		<main style={pageStyles}>
 			<div className="row">
@@ -50,7 +53,7 @@ const IndexPage: React.FC<PageProps> = () => {
 			</div>
 
 			<div className="row">
-				<div className="scroll-container" style={imageContainerStyles}>
+				<div className="grid-container-flex" style={imageContainerStyles}>
 					<ImageDescription
 						id='track-games'
 						description='Track quests, collectables, locations and miscellaneous items from your favourite games.'

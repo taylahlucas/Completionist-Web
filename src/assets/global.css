@@ -58,19 +58,15 @@ p {
 	border-radius: 10px;
 }
 
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  padding: 10px;
-  gap: 32px;
+.grid-container-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
 }
 
-.scroll-item {
-  padding: 20px;
-  min-width: 200px;
-  box-sizing: border-box;
+.grid-container-flex-item {
+  min-width: 300px;
   text-align: center;
-  flex-shrink: 0;
 }
 
 .grid-container {

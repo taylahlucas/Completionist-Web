@@ -7,7 +7,7 @@ interface ImageDescription {
 }
 
 const ImageDescription = ({ id, description }: ImageDescription) => (
-	<div key={id} className="scroll-item" style={{ width: 300 }}>
+	<div key={id} className="grid-container-flex-item" style={{ width: 300 }}>
 		<p style={{ width: 300 }}>{description}</p>
 		<div className="item">
 			<img

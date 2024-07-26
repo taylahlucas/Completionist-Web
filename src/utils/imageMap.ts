@@ -1,5 +1,6 @@
 import trackGames from "../assets/images/track-games.png";
 import changeSettings from "../assets/images/change-settings.png";
+import achievements from "../assets/images/achievements.png";
 import fallout3 from "../assets/images/fallout3.jpg";
 import fallout4 from "../assets/images/fallout4.jpg";
 import skyrim from "../assets/images/skyrim.jpg";
@@ -14,7 +15,7 @@ const imageUrl = '/src/assets/images';
 export const imageMap = {
 	'track-games': trackGames,
   'change-settings': changeSettings,
-	'achievements': changeSettings
+	'achievements': achievements
 };
 
 export const gameImageMap = {
