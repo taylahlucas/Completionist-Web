@@ -3,12 +3,14 @@ import { imageMap, imageMapKey } from '../utils/imageMap';
 
 interface ImageDescription {
 	id: imageMapKey;
+	title: string;
 	description: string;
 }
 
-const ImageDescription = ({ id, description }: ImageDescription) => (
-	<div key={id} className="grid-container-flex-item" style={{ width: 300 }}>
-		<p style={{ width: 300 }}>{description}</p>
+const ImageDescription = ({ id, title, description }: ImageDescription) => (
+	<div key={id} style={{ width: 300 }}>
+		<h3 style={{ textAlign: 'left', height: 20 }}>{title}</h3>
+		<p style={{ width: 300, height: 52 }}>{description}</p>
 		<div className="item">
 			<img
 				src={imageMap[id]}

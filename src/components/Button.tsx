@@ -14,7 +14,7 @@ const iconStyle = {
 const Button = ({ title, href, onPress }: ButtonProps) => (
 	<div style={{ display: 'inline-block', padding: 6, flexShrink: 0 }}>
 	<div className="button row" onClick={onPress}>
-		<h3 className="buttonTitle">{title}</h3>
+		<h3 className="buttonTitle heading-light">{title}</h3>
 		{href && <img style={iconStyle} src={href} color='white' width={30} height={30} />}
 	</div>
 	</div>
